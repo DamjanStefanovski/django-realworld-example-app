@@ -7,7 +7,7 @@ class Profile(TimestampedModel):
     # As mentioned, there is an inherent relationship between the Profile and
     # User models. By creating a one-to-one relationship between the two, we
     # are formalizing this relationship. Every user will have one -- and only
-    # one -- related Profile model.
+    # one -- related Profile model. modesl cascade upon deleting from the DB
     user = models.OneToOneField(
         'authentication.User', on_delete=models.CASCADE
     )
