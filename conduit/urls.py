@@ -23,3 +23,5 @@ urlpatterns = [
     url(r'^api/', include('conduit.apps.authentication.urls', namespace='authentication')),
     url(r'^api/', include('conduit.apps.profiles.urls', namespace='profiles')),
 ]
+
+#importing in django 2.0 or higher will need to be re written api's 
